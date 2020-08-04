@@ -1,7 +1,15 @@
 body{
     background: rgb(184, 248, 232);
+    font-family:Proxima Nova;
 }
-
+@media only screen and (max-width:379px){
+    h3,h5{
+        font-size:100%;
+    }
+    body{
+        font-size:80%;
+    }
+}
 #Header .navbar{
     opacity:0.8;
 }
@@ -23,7 +31,7 @@ body{
     min-height: 270px;
 }
 #Home .card{
-    margin-top:280px;
+    margin-top:210px;
     border-radius: 25px;
     border-top-width: 0.1px;
     border-left-width: medium;
@@ -37,6 +45,15 @@ body{
     color:white;
 }
 
+#About ul {
+    list-style: none;
+}
+#About ul li:before {
+    content: '✓ ';
+    color:black;
+    width:10px;
+    height:10px;
+}
 #About .topic, #Skills .topic, #Projects .topic, #Education .topic{
     border-radius:20px;
     background-color: rgb(156, 209, 214);
